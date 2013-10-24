@@ -1,0 +1,17 @@
+e0ad8a8ba05f5a73bec1824f0067ccbc *DESCRIPTION
+23718ca355eb441fb0904cba7995e1a7 *NAMESPACE
+08ae256d7740f6f29aa1e4412a3e06ff *R/agconst.R
+92dd0d0f07b1d5a76d23fa65cc148104 *R/basis2d.R
+9bc315a643c949631d80058413f1fe8d *R/basis3d.R
+9e6ebf96bf927d72265accd375cf79ca *R/doubconetest.R
+ef43689db5f26e09f0ce0106024fc340 *R/makedelta.R
+a2b5f7879d8b6a7fe75501c302c26328 *R/makemdelta.R
+46d4b68b7a715e9d3616dc5841900340 *R/partlintest.R
+72f02d2f3ddd4ddc1706140c6e5462ab *data/adhd.rda
+6e9c00fcb2a6eaf9e22a7419b13b993e *data/derby.rda
+6e60a0246c095294c5631f7d415fcde1 *man/DoubleCone-package.Rd
+d740c46b25e19271b4651a68f73ac3f9 *man/adhd.Rd
+987ace4e100d504f1fd9fad876d5e3c4 *man/agconst.Rd
+82e5b7bdeb783476039e537b4f1b813c *man/derby.Rd
+588426ca04314f5e5b76d16d2a2e7d23 *man/doubconetest.Rd
+fac988dcbceb85c00bccdb96ec3e2492 *man/partlintest.Rd

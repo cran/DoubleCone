@@ -14,15 +14,15 @@ function(y,xmat,nsim=1000){
 		one=matrix(1:n*0+1,ncol=1)
 		for(isim in 1:nsim){
 			ysim=rnorm(n)
-			p1=coneB(ysim,delta,one)$yhat
-			p2=coneB(ysim,-delta,one)$yhat
+			p1=coneB(ysim,t(delta),one)$yhat
+			p2=coneB(ysim,-t(delta),one)$yhat
 			r1=sum((ysim-p1)^2)
 			r2=sum((ysim-p2)^2)
 			r0=sum((ysim-mean(ysim))^2)
 			tdist[isim]=(r0-min(r1,r2))/r0	
 		}
-		p1=coneB(y,delta,one)$yhat
-		p2=coneB(y,-delta,one)$yhat
+		p1=coneB(y,t(delta),one)$yhat
+		p2=coneB(y,-t(delta),one)$yhat
 		r1=sum((y-p1)^2)
 		r2=sum((y-p2)^2)
 		r0=sum((y-mean(y))^2)

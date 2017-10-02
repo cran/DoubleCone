@@ -1,12 +1,12 @@
-e0ad8a8ba05f5a73bec1824f0067ccbc *DESCRIPTION
+cece595d76b7874448c0de97023727ac *DESCRIPTION
 23718ca355eb441fb0904cba7995e1a7 *NAMESPACE
-08ae256d7740f6f29aa1e4412a3e06ff *R/agconst.R
+2290a80ab2b3255a755569fc295f3c87 *R/agconst.R
 92dd0d0f07b1d5a76d23fa65cc148104 *R/basis2d.R
 9bc315a643c949631d80058413f1fe8d *R/basis3d.R
-9e6ebf96bf927d72265accd375cf79ca *R/doubconetest.R
+a47bbf720a9f5304cb26069dcc08da5e *R/doubconetest.R
 ef43689db5f26e09f0ce0106024fc340 *R/makedelta.R
 a2b5f7879d8b6a7fe75501c302c26328 *R/makemdelta.R
-46d4b68b7a715e9d3616dc5841900340 *R/partlintest.R
+2a57a0c731fcb8802163c848eb3f6e55 *R/partlintest.R
 72f02d2f3ddd4ddc1706140c6e5462ab *data/adhd.rda
 6e9c00fcb2a6eaf9e22a7419b13b993e *data/derby.rda
 6e60a0246c095294c5631f7d415fcde1 *man/DoubleCone-package.Rd

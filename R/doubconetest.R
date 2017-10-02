@@ -13,8 +13,8 @@ function(y,amat,nsim=1000){
 	if(nsim>0){tdist=1:nsim}
 	if(d+m==n){
 		delta=t(t(amat)%*%solve(amat%*%t(amat)))
-		p1k=coneB(y,delta,vmat)$yhat
-		p2k=coneB(y,-delta,vmat)$yhat
+		p1k=coneB(y,t(delta),vmat)$yhat
+		p2k=coneB(y,-t(delta),vmat)$yhat
 		s0=sum((y-p0k)^2)
 		s1=sum((y-p1k)^2)
 		s2=sum((y-p2k)^2)
@@ -25,8 +25,8 @@ function(y,amat,nsim=1000){
 				if(d>0){
 					p0=pmat%*%ysim
 				}else{p0k=ysim*0}
-				p1=coneB(ysim,delta,vmat)$yhat
-				p2=coneB(ysim,-delta,vmat)$yhat
+				p1=coneB(ysim,t(delta),vmat)$yhat
+				p2=coneB(ysim,-t(delta),vmat)$yhat
 				s0=sum((ysim-p0)^2)
 				s1=sum((ysim-p1)^2)
 				s2=sum((ysim-p2)^2)

@@ -1,14 +1,15 @@
 Package: DoubleCone
 Type: Package
-Title: Test against parametric regression function
-Version: 1.0
-Date: 2013-10-24
+Title: Test Against Parametric Regression Function
+Version: 1.1
+Date: 2017-10-02
 Author: Mary C Meyer, Bodhisattva Sen
 Maintainer: Mary C Meyer <meyer@stat.colostate.edu>
-Description: Performs hypothesis tests concerning a regression function in a least-squares model, where the null is a parametric function, and the alternative is the union of large-dimensional convex polyhedral cones.  
+Description: Performs hypothesis tests concerning a regression function in a least-squares model, where the null is a parametric function, and the alternative is the union of large-dimensional convex polyhedral cones. See Bodhisattva Sen and Mary C Meyer (2016) <doi:10.1111/rssb.12178> for more details.
 License: GPL-2 | GPL-3
-Depends: graphics, grDevices, stats, utils, coneproj, Matrix, MASS
-Packaged: 2013-11-22 20:07:10 UTC; marycmeyer
+Depends: graphics, grDevices, stats, utils, coneproj (>= 1.12), Matrix,
+        MASS
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-11-22 22:02:24
+Packaged: 2017-10-02 14:44:29 UTC; xiyueliao
+Date/Publication: 2017-10-02 18:52:54 UTC

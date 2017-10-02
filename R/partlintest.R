@@ -24,9 +24,9 @@ function(x,y,zmat,h0=0,nsim=1000){
 	p0k=pmat%*%y
 	dtil=delta
 	for(i in 1:m){dtil[i,]=delta[i,]-pmat%*%delta[i,]}
-	ans1=coneB(y,dtil)
+	ans1=coneB(y,t(dtil))
 	p1k=ans1$yhat+p0k
-	ans2=coneB(y,-dtil)
+	ans2=coneB(y,-t(dtil))
 	p2k=ans2$yhat+p0k
 	s0=sum((y-p0k)^2)
 	s1=sum((y-p1k)^2)
@@ -37,9 +37,9 @@ function(x,y,zmat,h0=0,nsim=1000){
 		for(isim in 1:nsim){
 			ysim=rnorm(n)
 			p0=pmat%*%ysim
-			ans1=coneB(ysim,dtil)
+			ans1=coneB(ysim,t(dtil))
 			p1=ans1$yhat+p0
-			ans2=coneB(ysim,-dtil)
+			ans2=coneB(ysim,-t(dtil))
 			p2=ans2$yhat+p0
 			s0=sum((ysim-p0)^2)
 			s1=sum((ysim-p1)^2)
